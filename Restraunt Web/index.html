@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h2 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+        }
+        .navbar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .icons span {
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .post {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        .post-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .post-actions span {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h2>Instagram</h2>
+            <input type="text" placeholder="Search...">
+            <div class="icons">
+                <span>🏠</span>
+                <span>❤️</span>
+                <span>🔔</span>
+                <span>👤</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="post">
+            <div class="post-header">
+                <span class="username">User1</span>
+            </div>
+            <img src="https://via.placeholder.com/500" alt="Post Image">
+            <div class="post-actions">
+                <span>❤️</span>
+                <span>💬</span>
+                <span>📤</span>
+            </div>
+            <p><strong>User1</strong> This is an awesome post!</p>
+        </div>
+    </main>
+</body>
+</html>

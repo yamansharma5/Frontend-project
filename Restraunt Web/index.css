@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffa500;
+}
+
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.navbar .dropdown li {
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url(img/089bce0b11f9a94c850061e14843f511.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ff8800;
+}
+
+/* Categories Section */
+.categories {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.categories .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.categories .box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.categories .box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.categories .box:hover {
+    transform: scale(1.05);
+}
+
+/* Food Menu Section */
+.food-menu {
+    padding: 2rem 0;
+}
+
+.food-menu .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.food-menu .menu-item img {
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.food-menu .description {
+    max-width: 600px;
+}
+
+.food-menu .description h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.food-menu .food-price {
+    color: #ffa500;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.food-menu .rating i {
+    color: #ffa500;
+}
+
+.food-menu .btn {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.food-menu .btn:hover {
+    background: #ff8800;
+}
+
+/* Reviews Section */
+.reviews {
+    background: #f9f9f9;
+    padding: 2rem 0;
+}
+
+.reviews .review {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.reviews .review p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.reviews .review h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: #ff8800;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer .col {
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ffa500;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffa500;
+}
